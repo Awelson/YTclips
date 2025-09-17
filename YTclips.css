@@ -1,0 +1,17 @@
+.clickable {
+    cursor: pointer;
+    color: #0066cc; /* A blue color to suggest a link */
+    text-decoration: underline;
+    transition: background-color 0.2s; /* Smooth transition for hover */
+}
+
+.clickable-quote {
+    cursor: pointer;
+    display: block; /* Makes the padding and border wrap the content */
+    transition: background-color 0.2s; /* Smooth transition for hover */
+}
+
+.clickable:hover, .clickable-quote:hover {
+    /* background-color: #f0f0f0; */
+    background-color: #d6d8d9;
+}

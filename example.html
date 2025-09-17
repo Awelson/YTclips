@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YTclips JS & CSS Showcase</title>
+    <link rel="stylesheet" href="YTclips.css">
+    <style>
+        blockquote {
+            border-left: 6px solid #0078d4;
+            margin: 20px 0 0 0;
+            padding: 16px 24px;
+            font-style: italic;
+            color: #343a40;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>YTclips Demo</h1>
+    
+    <iframe 
+        width="720"
+        height="405"
+        id="player"
+        src="https://www.youtube.com/embed/iNV6apzN0AU?enablejsapi=1">
+    </iframe>
+
+    <div>
+        <span class="clickable" onclick="playSegment(189.2, 224)">Click to play : Le Rat (3:09-3:44)</span>
+    </div>
+
+    <div class="clickable-quote" onclick="playSegment(380,432)">
+    <blockquote>
+        "Click this quote to play : La Porte (6:20-7:12)"
+    </blockquote>
+    </div>
+
+    <script src="YTclips.js"></script>
+</body>
+</html>
